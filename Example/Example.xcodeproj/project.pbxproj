@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4A8B681C16C4B378006754E2 /* JNIBuild */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4A8B681D16C4B379006754E2 /* Build configuration list for PBXAggregateTarget "JNIBuild" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = JNIBuild;
+			productName = JNIBuild;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4A71B11D16C4A35100A84A41 /* runapk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A71B11C16C4A35100A84A41 /* runapk.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4A765E3716C3D0DA000D40AB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4A71B11C16C4A35100A84A41 /* runapk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = runapk.cpp; sourceTree = "<group>"; };
+		4A765E3916C3D0DA000D40AB /* Example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Example; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A81974416C4B597001C2096 /* jni */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jni; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A765E3616C3D0DA000D40AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A71B11B16C4A35100A84A41 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				4A71B11C16C4A35100A84A41 /* runapk.cpp */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		4A765E2B16C3D062000D40AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A765E3916C3D0DA000D40AB /* Example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4ABDC7E016C1001A000F5174 = {
+			isa = PBXGroup;
+			children = (
+				4A81974416C4B597001C2096 /* jni */,
+				4A71B11B16C4A35100A84A41 /* tools */,
+				4A765E2B16C3D062000D40AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A765E3816C3D0DA000D40AB /* Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A765E3F16C3D0DA000D40AB /* Build configuration list for PBXNativeTarget "Example" */;
+			buildPhases = (
+				4A765E3516C3D0DA000D40AB /* Sources */,
+				4A765E3616C3D0DA000D40AB /* Frameworks */,
+				4A765E3716C3D0DA000D40AB /* CopyFiles */,
+				4A765E4516C3D3E3000D40AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Example;
+			productName = __RUN_APK__;
+			productReference = 4A765E3916C3D0DA000D40AB /* Example */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4ABDC7E116C1001A000F5174 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = 4ABDC7E416C1001A000F5174 /* Build configuration list for PBXProject "Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4ABDC7E016C1001A000F5174;
+			productRefGroup = 4A765E2B16C3D062000D40AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A765E3816C3D0DA000D40AB /* Example */,
+				4A8B681C16C4B378006754E2 /* JNIBuild */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A765E4516C3D3E3000D40AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "if [ -f \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" ]; then\n    \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" build\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A765E3516C3D0DA000D40AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A71B11D16C4A35100A84A41 /* runapk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4A765E4016C3D0DA000D40AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DANDROID_SDK_ROOT=$(ANDROID_SDK_ROOT)",
+					"-DANDROID_NDK_ROOT=$(ANDROID_NDK_ROOT)",
+					"-DANDROID_ACTIVITY_NAME=$(ANDROID_ACTIVITY_NAME)",
+					"-DANDROID_PACKAGE_NAME=$(ANDROID_PACKAGE_NAME)",
+					"-DSRCROOT=$(SRCROOT)",
+				);
+				PRODUCT_NAME = Example;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4A765E4116C3D0DA000D40AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-DANDROID_SDK_ROOT=$(ANDROID_SDK_ROOT)",
+					"-DANDROID_NDK_ROOT=$(ANDROID_NDK_ROOT)",
+					"-DANDROID_ACTIVITY_NAME=$(ANDROID_ACTIVITY_NAME)",
+					"-DANDROID_PACKAGE_NAME=$(ANDROID_PACKAGE_NAME)",
+					"-DSRCROOT=$(SRCROOT)",
+				);
+				PRODUCT_NAME = Example;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4A8B681E16C4B379006754E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4A8B681F16C4B379006754E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4ABDC7E516C1001A000F5174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ANDROID_ACTIVITY_NAME = "$(PROJECT_NAME)Activity";
+				ANDROID_NDK_ROOT = "/Users/hayashi/Development/Android/android-ndk";
+				ANDROID_PACKAGE_NAME = "com.example.$(PROJECT_NAME)";
+				ANDROID_SDK_ROOT = "/Users/hayashi/Development/Android/android-sdk";
+			};
+			name = Debug;
+		};
+		4ABDC7E616C1001A000F5174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ANDROID_ACTIVITY_NAME = "$(PROJECT_NAME)Activity";
+				ANDROID_NDK_ROOT = "/Users/hayashi/Development/Android/android-ndk";
+				ANDROID_PACKAGE_NAME = "com.example.$(PROJECT_NAME)";
+				ANDROID_SDK_ROOT = "/Users/hayashi/Development/Android/android-sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A765E3F16C3D0DA000D40AB /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A765E4016C3D0DA000D40AB /* Debug */,
+				4A765E4116C3D0DA000D40AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8B681D16C4B379006754E2 /* Build configuration list for PBXAggregateTarget "JNIBuild" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A8B681E16C4B379006754E2 /* Debug */,
+				4A8B681F16C4B379006754E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4ABDC7E416C1001A000F5174 /* Build configuration list for PBXProject "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4ABDC7E516C1001A000F5174 /* Debug */,
+				4ABDC7E616C1001A000F5174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4ABDC7E116C1001A000F5174 /* Project object */;
+}
